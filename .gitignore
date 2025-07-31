@@ -1,0 +1,26 @@
+# Go
+# Compiled Object files, Static Libraries, and Executables
+*.o
+*.a
+*.exe
+*.exe~
+main
+htmx-portfolio
+tmp/
+bin/
+
+# Dependency management
+vendor/
+
+# TailwindCSS
+/static/css/output.css
+tailwindcss
+
+# General
+.DS_Store
+*.log
+.env*
+
+# IDE settings
+.vscode/
+.idea/

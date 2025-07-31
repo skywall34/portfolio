@@ -1,0 +1,16 @@
+package templates
+
+import (
+    "github.com/skywall34/portfolio/internal/models"
+)
+
+templ Home(data models.PageData) {
+    @Layout(data.Title,
+        Navbar(),
+        Banner(),
+        Profile(),
+        Skills(data.Skills),
+        Projects(data.Projects),
+        Blogs(data.Blogs),
+    )
+}

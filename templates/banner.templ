@@ -1,0 +1,17 @@
+package templates
+
+import "time"
+
+
+templ Banner() {
+    <div class="relative h-64 md:h-96 overflow-hidden">
+        <iframe
+            src="https://maps.google.com/maps?q=Houston%2C%20TX&z=10&output=embed"
+            class="w-full h-full opacity-60 filter grayscale"
+            frameborder="0" allowfullscreen="" loading="lazy">
+        </iframe>
+        <div class="absolute top-4 right-4 bg-gray-800 bg-opacity-75 text-sm px-3 py-1 rounded">
+            {{ time.Now().Format("03:04 PM MST") }}
+        </div>
+    </div>
+}

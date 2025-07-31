@@ -1,0 +1,18 @@
+package templates
+
+import (
+    "github.com/skywall34/portfolio/internal/models"
+)
+
+templ Skills(skills []models.Skill) {
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-4">
+            for _, skill := range skills{
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
+                    <img src={skill.Icon} alt={skill.Name} class="h-8 w-8 mb-2" />
+                    <span class="text-sm">{skill.Name}</span>
+                </div>
+            }
+        </div>
+    </section>
+}

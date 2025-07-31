@@ -1,0 +1,20 @@
+package templates
+
+import (
+    "github.com/skywall34/portfolio/internal/models"
+)
+
+templ Blogs(blogs []models.Blog) {
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-semibold mb-6">BLOGS</h2>
+        <div class="flex space-x-4 overflow-x-auto pb-4">
+            for _, blog := range blogs{
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg">
+                    <img src={blog.Thumbnail} alt={blog.Title} class="rounded mb-2" />
+                    <h3 class="font-semibold">{blog.Title}</h3>
+                    <a href={blog.Link}>Come Try It Out!</a>
+                </div>
+            }
+        </div>
+    </section>
+}

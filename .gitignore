@@ -24,3 +24,7 @@ tailwindcss
 # IDE settings
 .vscode/
 .idea/
+.claude/
+
+# AI helpers
+CLAUDE.md

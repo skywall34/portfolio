@@ -40,6 +40,7 @@ func Home(data models.PageData) templ.Component {
 			Skills(data.Skills),
 			Projects(data.Projects),
 			Blogs(data.Blogs),
+			Contact(),
 		).Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

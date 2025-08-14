@@ -5,14 +5,22 @@ import (
 )
 
 templ Skills(skills []models.Skill) {
-    <section class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-4">
-            for _, skill := range skills{
-                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
-                    <img src={skill.Icon} alt={skill.Name} class="h-8 w-8 mb-2" />
-                    <span class="text-sm">{skill.Name}</span>
-                </div>
-            }
+    <section class="container mx-auto px-4 py-16">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-light text-white mb-2">Tech Stack</h2>
+            <p class="text-gray-400 mb-12">Technologies I work with</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 stagger-animation">
+                for _, skill := range skills {
+                    <div class="group flex flex-col items-center p-4 bg-gray-800/30 backdrop-blur border border-gray-700/30 rounded-xl hover:border-blue-500/30 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 modern-shadow w-24 md:w-28">
+                        <img src={skill.Icon} alt={skill.Name} 
+                             class="h-8 w-8 mb-3 group-hover:scale-110 transition-transform duration-300" />
+                        <span class="text-xs text-gray-300 group-hover:text-white transition-colors text-center leading-tight">
+                            {skill.Name}
+                        </span>
+                    </div>
+                }
+            </div>
         </div>
     </section>
 }

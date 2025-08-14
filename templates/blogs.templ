@@ -5,16 +5,48 @@ import (
 )
 
 templ Blogs(blogs []models.Blog) {
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-2xl font-semibold mb-6">BLOGS</h2>
-        <div class="flex space-x-4 overflow-x-auto pb-4">
-            for _, blog := range blogs{
-                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg">
-                    <img src={blog.Thumbnail} alt={blog.Title} class="rounded mb-2" />
-                    <h3 class="font-semibold">{blog.Title}</h3>
-                    <a href={blog.Link}>Come Try It Out!</a>
+    <section id="blogs" class="container mx-auto px-4 py-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-light text-white mb-2">Latest Posts</h2>
+            <p class="text-gray-400 mb-12">Thoughts on development, infrastructure, and tech</p>
+            
+            <!-- Horizontal scrollable container -->
+            <div class="overflow-x-auto pb-4">
+                <div class="flex gap-6 min-w-max">
+                    for _, blog := range blogs {
+                        <article class="group bg-gray-800/50 backdrop-blur border border-gray-700/50 rounded-2xl overflow-hidden hover:border-gray-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 modern-shadow-hover w-80 flex-shrink-0">
+                            <div class="aspect-[16/9] overflow-hidden">
+                                <img src={blog.Thumbnail} alt={blog.Title} 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div class="p-6">
+                                if len(blog.Tags) > 0 {
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        for _, tag := range blog.Tags {
+                                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-800/30">
+                                                {tag}
+                                            </span>
+                                        }
+                                    </div>
+                                }
+                                <h3 class="text-xl font-medium text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+                                    {blog.Title}
+                                </h3>
+                                if blog.Summary != "" {
+                                    <p class="text-gray-400 mb-4 line-clamp-3">{blog.Summary}</p>
+                                }
+                                <a href={blog.Link} 
+                                   class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium group-hover:translate-x-1 transition-all">
+                                    Read More 
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    }
                 </div>
-            }
+            </div>
         </div>
     </section>
 }

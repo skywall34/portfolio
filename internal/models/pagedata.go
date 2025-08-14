@@ -11,9 +11,16 @@ type PageData struct {
 }
 
 type Blog struct {
-    Title     string
-    Thumbnail string
-    Link      string
+    ID        string   `json:"id"`
+    Title     string   `json:"title"`
+    Thumbnail string   `json:"thumbnail"`
+    Link      string   `json:"link"`
+    Date      string   `json:"date"`
+    Tags      []string `json:"tags"`
+    Summary   string   `json:"summary"`
+    Image     string   `json:"image"`
+    PrevPost  string   `json:"prev_post,omitempty"`
+    NextPost  string   `json:"next_post,omitempty"`
 }
 
 type Project struct {

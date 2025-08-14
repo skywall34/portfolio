@@ -1,5 +1,7 @@
 # 5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX
 
+Tags: Go, HTMX, Web Development, SQLite, Travel
+
 If you've ever wanted to track your trips seamlessly and intuitively, this step-by-step guide shows you exactly how to build your own interactive travel tracking application—just like "Mia's Trips." Built using Go, SQLite, HTMX, and Tailwind CSS, this project is perfect for anyone looking to dive deep into web application development.
 
 ## Step 1: Set Up Your Development Environment to Hit the Ground Running

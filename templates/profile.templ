@@ -1,22 +1,37 @@
 package templates
 
 templ Profile() {
-    <section class="container mx-auto px-4 mt-8 flex flex-col md:flex-row items-center">
-        <img src="/static/img/avatar.png" alt="Mike Shin" 
-             class="h-32 w-32 rounded-full border-4 border-gray-800" />
-        <div class="ml-6">
-            <h1 class="text-4xl font-bold">Hey, I’m Mike <span>👋</span></h1>
-            <div class="mt-2 flex items-center space-x-2">
-                <span class="h-3 w-3 bg-green-400 rounded-full animate-pulse"></span>
+    <section class="container mx-auto px-4 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="relative">
+                    <img src="/static/img/avatar.png" alt="Mike Shin" 
+                         class="h-32 w-32 md:h-40 md:w-40 rounded-full border-4 border-gray-700 shadow-2xl" />
+                    <div class="absolute -bottom-2 -right-2 h-6 w-6 bg-green-400 rounded-full animate-pulse border-4 border-gray-900"></div>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-light text-white mb-4">
+                        Hey, I'm <span class="font-medium text-blue-400">Mike</span> 
+                        <span class="inline-block animate-bounce">👋</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-6 font-light">
+                        Software Developer & Infrastructure Specialist
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mb-8">
+                        I'm a software developer with 7+ years of experience building scalable systems. 
+                        I specialize in backend services, real-time systems, and MLOps infrastructure.
+                        Recently, I've been exploring machine learning operations and automated deployment pipelines.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg">
+                            View Projects
+                        </a>
+                        <a href="#blogs" class="border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white px-6 py-3 rounded-lg font-medium transition-all">
+                            Read Blog
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p class="mt-4 text-gray-300 max-w-xl">
-                I'm a software developer with 7 years of experience and counting. 
-                I enjoy learning new technologies and specialize in building services mostly backend and infrastructure related to real time systems.
-                More recently I've become interested in learning more about machine learning, 
-                especially in regards to MLOps and building systems helping to automate model training/deployment.
-
-                In my free time, I either like to play video games, hang out with my beautiful wife, or work on side projects. Feel free to look at what I've been working on here!
-            </p>
         </div>
     </section>
 }

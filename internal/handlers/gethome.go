@@ -20,12 +20,14 @@ func NewGetHomeHandler() *GetHomeHandler {
 func loadProjects() []m.Project {
     return []m.Project{
         {Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/project1.png", Link: "https://fromnto.cloud"},
+        {Title: "Portfolio Website", Thumbnail: "/static/img/project2.png", Link: "https://github.com/skywall34/portfolio"},
     }
 }
 
 func loadBlogs() []m.Blog {
 	return []m.Blog{
-		{Title: "Beginner's Guide to HPCs", Thumbnail: "/static/img/blog1.png", Link: "http://localhost:3000/blogs/hpc"},
+		{Title: "Beginner's Guide to HPCs", Thumbnail: "/static/img/blog1.png", Link: "/blogs/hpc", Tags: []string{"HPC", "Learning", "SLURM"}},
+		{Title: "5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX", Thumbnail: "/static/img/project1.png", Link: "/blogs/triptracker", Tags: []string{"Go", "HTMX", "Web Development", "SQLite", "Travel"}},
 	}
 }
 

@@ -11,9 +11,11 @@ templ Layout(title string, children ...templ.Component) {
         <script src="https://unpkg.com/htmx.org@1.9.4"></script>
     </head>
     <body class="bg-gray-900 text-gray-100">
-        for _, child := range children {
-            @child
-        }
+        <div class="page-transition">
+            for _, child := range children {
+                @child
+            }
+        </div>
     </body>
     </html>
 }

@@ -27,6 +27,8 @@ func loadProjects() []m.Project {
 func loadBlogs() []m.Blog {
 	return []m.Blog{
 		{Title: "Beginner's Guide to HPCs", Thumbnail: "/static/img/blog1.png", Link: "/blogs/hpc", Tags: []string{"HPC", "Learning", "SLURM"}},
+		{Title: "Setting Up SLURM Database (slurmdbd) - HPC Series Part 2", Thumbnail: "/static/img/blog1.png", Link: "/blogs/slurmdb", Tags: []string{"HPC", "SLURM", "Database", "Accounting"}},
+		{Title: "Setting Up SLURM REST API (slurmrestd) - HPC Series Part 3", Thumbnail: "/static/img/blog1.png", Link: "/blogs/slurmrestd", Tags: []string{"HPC", "SLURM", "REST API", "JWT", "Authentication"}},
 		{Title: "5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX", Thumbnail: "/static/img/project1.png", Link: "/blogs/triptracker", Tags: []string{"Go", "HTMX", "Web Development", "SQLite", "Travel"}},
 	}
 }

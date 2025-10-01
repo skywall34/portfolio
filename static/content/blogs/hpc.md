@@ -304,14 +304,29 @@ srun -N <NUMBER-OF-NODES> hostname
 
 Where <NUMBER-OF-NODES> is the number of worker nodes that are currently Setup. If everything goes well, this should return the name of all of your nodes.
 
-## Troubleshooting
-
-## Tooling (In a separate blog post)
-
-### CLI
-
-### RestAPI
-
-### UI
-
 ## Conclusion
+
+Congratulations! You've successfully built a basic SLURM HPC cluster. You now have:
+
+- A control node running `slurmctld` to manage your cluster
+- Compute nodes ready to execute jobs
+- Shared filesystem for data access across nodes
+- GPU support configured via gres.conf
+- Authentication via MUNGE
+
+This foundational setup is just the beginning. In production environments, you'll want to add:
+
+- **Job accounting** - Track resource usage and job history
+- **REST API access** - Enable programmatic job submission
+- **Advanced scheduling** - Configure fair-share, QOS, and resource limits
+- **Monitoring** - Set up dashboards for cluster health and utilization
+- **Backups** - Protect configuration files and databases
+
+### What's Next?
+
+This is Part 1 of a series on building and managing HPC clusters. Continue with:
+
+- [Part 2: Setting Up SLURM Database (slurmdbd)](/blogs/slurmdb) - Add job accounting and usage tracking
+- [Part 3: Setting Up SLURM REST API (slurmrestd)](/blogs/slurmrestd) - Enable programmatic access to your cluster
+
+If you're considering building an HPC cluster for your team, I hope this guide gives you a solid starting point. Good luck!

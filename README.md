@@ -53,7 +53,7 @@ Make sure you have the following tools installed:
     To compile the utility classes into a static CSS file, run the Tailwind CLI:
 
     ```bash
-    tailwindcss -i ./static/css/input.css -o ./static/css/output.css
+    ./tailwindcss -i ./static/css/input.css -o ./static/css/output.css
     ```
 
 5.  **Run the development server:**

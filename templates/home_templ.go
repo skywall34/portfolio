@@ -38,6 +38,7 @@ func Home(data models.PageData) templ.Component {
 			Banner(),
 			Profile(),
 			Skills(data.Skills),
+			Experience(),
 			Projects(data.Projects),
 			Blogs(data.Blogs),
 			Contact(),

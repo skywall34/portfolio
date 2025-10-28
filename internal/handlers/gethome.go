@@ -18,9 +18,9 @@ func NewGetHomeHandler() *GetHomeHandler {
 
 func loadProjects() []m.Project {
 	return []m.Project{
-		{Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/project1.png", Link: "https://fromnto.cloud"},
-		{Title: "Portfolio Website", Thumbnail: "/static/img/project2.png", Link: "https://github.com/skywall34/portfolio"},
-		{Title: "System Monitor TUI", Thumbnail: "/static/img/project2.png", Link: "https://github.com/skywall34/sysmon"},
+		{Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/fromntoproject.png", Link: "https://fromnto.cloud"},
+		{Title: "Portfolio Website", Thumbnail: "/static/img/portfolioproject.png", Link: "https://github.com/skywall34/portfolio"},
+		{Title: "System Monitor TUI", Thumbnail: "/static/img/sysmonproject.png", Link: "https://github.com/skywall34/sysmon"},
 	}
 }
 

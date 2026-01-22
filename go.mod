@@ -2,7 +2,7 @@ module github.com/skywall34/portfolio
 
 go 1.24.4
 
-require github.com/a-h/templ v0.3.906
+require github.com/a-h/templ v0.3.977
 
 require (
 	github.com/alecthomas/chroma/v2 v2.19.0

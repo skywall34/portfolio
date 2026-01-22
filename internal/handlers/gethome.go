@@ -19,7 +19,6 @@ func NewGetHomeHandler() *GetHomeHandler {
 func loadProjects() []m.Project {
 	return []m.Project{
 		{Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/fromntoproject.png", Link: "https://fromnto.cloud"},
-		{Title: "Portfolio Website", Thumbnail: "/static/img/portfolioproject.png", Link: "https://github.com/skywall34/portfolio"},
 		{Title: "System Monitor TUI", Thumbnail: "/static/img/sysmonproject.png", Link: "https://github.com/skywall34/sysmon"},
 	}
 }
@@ -29,8 +28,9 @@ func loadBlogs() []m.Blog {
 		{Title: "Beginner's Guide to HPCs", Thumbnail: "/static/img/blog1.png", Link: "/blogs/hpc", Tags: []string{"HPC", "Learning", "SLURM"}},
 		{Title: "Setting Up SLURM Database (slurmdbd) - HPC Series Part 2", Thumbnail: "/static/img/blog1.png", Link: "/blogs/slurmdb", Tags: []string{"HPC", "SLURM", "Database", "Accounting"}},
 		{Title: "Setting Up SLURM REST API (slurmrestd) - HPC Series Part 3", Thumbnail: "/static/img/blog1.png", Link: "/blogs/slurmrestd", Tags: []string{"HPC", "SLURM", "REST API", "JWT", "Authentication"}},
-		{Title: "5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX", Thumbnail: "/static/img/project1.png", Link: "/blogs/triptracker", Tags: []string{"Go", "HTMX", "Web Development", "SQLite", "Travel"}},
+		{Title: "5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX", Thumbnail: "/static/img/fromntoproject.png", Link: "/blogs/triptracker", Tags: []string{"Go", "HTMX", "Web Development", "SQLite", "Travel"}},
 		{Title: "Building a System Monitor using Rust", Thumbnail: "/static/img/blog1.png", Link: "/blogs/sysmon", Tags: []string{"Rust", "Linux", "TUI", "Systems"}},
+		{Title: "Dev Log #1 - Starting a New Project and Working with AI", Thumbnail: "/static/img/fantasytrading.png", Link: "/blogs/devlog012126", Tags: []string{"GoLang", "HTXM", "DevLog", "Web Devlopment"}},
 	}
 }
 

@@ -18,7 +18,7 @@ func NewGetHomeHandler() *GetHomeHandler {
 
 func loadProjects() []m.Project {
 	return []m.Project{
-		{Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/fromntoproject.png", Link: "https://fromnto.cloud"},
+		{Title: "Trip Tracker website using Go, Templ, HTMX, and TailwindCSS", Thumbnail: "/static/img/fromntoproject.png", Link: "https://themshin.com/fromnto/"},
 		{Title: "System Monitor TUI", Thumbnail: "/static/img/sysmonproject.png", Link: "https://github.com/skywall34/sysmon"},
 	}
 }
@@ -30,7 +30,10 @@ func loadBlogs() []m.Blog {
 		{Title: "Setting Up SLURM REST API (slurmrestd) - HPC Series Part 3", Thumbnail: "/static/img/blog1.png", Link: "/blogs/slurmrestd", Tags: []string{"HPC", "SLURM", "REST API", "JWT", "Authentication"}},
 		{Title: "5 Essential Steps to Build a Powerful Trip Tracker Web App with Go and HTMX", Thumbnail: "/static/img/fromntoproject.png", Link: "/blogs/triptracker", Tags: []string{"Go", "HTMX", "Web Development", "SQLite", "Travel"}},
 		{Title: "Building a System Monitor using Rust", Thumbnail: "/static/img/blog1.png", Link: "/blogs/sysmon", Tags: []string{"Rust", "Linux", "TUI", "Systems"}},
-		{Title: "Dev Log #1 - Starting a New Project and Working with AI", Thumbnail: "/static/img/fantasytrading.png", Link: "/blogs/devlog012126", Tags: []string{"GoLang", "HTXM", "DevLog", "Web Devlopment"}},
+		{Title: "Dev Log #1 - Starting a New Project and Working with AI", Thumbnail: "/static/img/fantasytrading.png", Link: "/blogs/devlog012126", Tags: []string{"GoLang", "HTMX", "DevLog", "Web Devlopment"}},
+		{Title: "Learning Rust Learning Rust by Breaking It (A Lot) - Codegardener Part 1", Thumbnail: "/static/img/rust.png", Link: "/blogs/codegardener-1", Tags: []string{"Rust", "DevLog", "Learning"}},
+		{Title: "When Your Formula Ranks a PNG as the Biggest Risk - Codegardener Part 2", Thumbnail: "/static/img/rust.png", Link: "/blogs/codegardener-2", Tags: []string{"Rust", "DevLog", "Learning"}},
+		{Title: "The Bug Where Everything Was Suspiciously Perfect - Codegardener Part 3", Thumbnail: "/static/img/rust.png", Link: "/blogs/codegardener-3", Tags: []string{"Rust", "DevLog", "Learning"}},
 	}
 }
 
